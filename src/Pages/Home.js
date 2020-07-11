@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from 'react-router';
+
 import "./homegrown.css";
-import './animation/modal.js';
+import './animation/modal-manager.js';
+
 import plants from "./img/plants.png";
 import plants2 from "./img/plants2.png";
 import placeholderPFP from "./img/logo.png";
@@ -45,8 +48,7 @@ return (
 
 		{/* Toolbar at the top */}
 		<div class="toolbar">
-			<button className="toolbar-button" id="login">LOGIN</button>
-			<button className="toolbar-button" id="register">REGISTER</button>
+			<button className="toolbar-button" id="login">SIGN IN</button>
 			<button className="toolbar-button" id="pfp">
 				<img id="icon" src={placeholderPFP} alt=""/>
 			</button>
@@ -56,22 +58,11 @@ return (
 		{/* Modal popups */}
 		<div className="modal-container" id="login-container">
 			<div className="modal-content">
-				<h1>LOGIN</h1>
+				<h1>SIGN IN</h1>
 
 			<div className="close">+</div>
 
-			<button className="button">SUBMIT</button>
-
-			</div>
-		</div>
-
-		<div className="modal-container" id="register-container">
-			<div className="modal-content">
-				<h1>REGISTER</h1>
-
-			<div className="close">+</div>
-
-			<button className="button">SUBMIT</button>
+			<a href="https://www.google.com" className="button">SUBMIT</a>
 
 			</div>
 		</div>
