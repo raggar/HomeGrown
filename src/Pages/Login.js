@@ -39,7 +39,7 @@ class Login extends Component {
 	render() {
 		return (
 			<div className="login">
-				{this.props.status.isSignedIn ? (
+				{this.props.isSignedIn ? (
 					<div>
 						<div>Signed In!</div>
 						<button onClick={this.logout}>Sign out!</button>
@@ -51,10 +51,13 @@ class Login extends Component {
 						/>
 					</div>
 				) : (
-					<StyledFirebaseAuth
-						uiConfig={this.uiConfig}
-						firebaseAuth={firebase.auth()}
-					/>
+					<div>
+						<h1>Home Grown Login Page</h1>
+						<StyledFirebaseAuth
+							uiConfig={this.uiConfig}
+							firebaseAuth={firebase.auth()}
+						/>
+					</div>
 				)}
 			</div>
 		);

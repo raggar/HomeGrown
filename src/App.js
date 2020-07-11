@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-import Login from "./Login";
+import Routes from "./Routes";
+import { Redirect } from "react-router-dom";
 
 class App extends Component {
 	state = {
@@ -11,8 +12,9 @@ class App extends Component {
 
 	logsOut = () => {
 		this.setState({ isSignedIn: false }, () =>
-			console.log("User Logged Out:", this.state.isSignedIn)
+			console.log("User Logged In:", this.state.isSignedIn)
 		);
+		return <Redirect to="/signout" />;
 	};
 
 	logsIn = (user) => {
@@ -24,10 +26,10 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Login
+				<Routes
 					logsOut={this.logsOut}
 					logsIn={this.logsIn}
-					status={this.state}
+					isSignedIn={this.state.isSignedIn}
 				/>
 			</div>
 		);
