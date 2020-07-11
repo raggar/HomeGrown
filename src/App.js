@@ -3,6 +3,8 @@ import "./App.css";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
+
+/// JEANNIE AKA gENIE
 //initializes firebase
 firebase.initializeApp({
 	apiKey: "AIzaSyDRiQUIqJjSIDV9Yjf9SxMBAgsFiX6M4pw", //taken from Firebase developer console
