@@ -14,7 +14,6 @@ class App extends Component {
 		this.setState({ isSignedIn: false }, () =>
 			console.log("User Logged In:", this.state.isSignedIn)
 		);
-		return <Redirect to="/signout" />;
 	};
 
 	logsIn = (user) => {

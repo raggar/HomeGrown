@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-
+import { Link } from "react-router-dom";
 //initializes firebase
 firebase.initializeApp({
 	apiKey: "AIzaSyDRiQUIqJjSIDV9Yjf9SxMBAgsFiX6M4pw", //taken from Firebase developer console
@@ -42,7 +42,9 @@ class Login extends Component {
 				{this.props.isSignedIn ? (
 					<div>
 						<div>Signed In!</div>
-						<button onClick={this.logout}>Sign out!</button>
+						<Link to="/signout">
+							<button onClick={this.logout}>Sign out!</button>
+						</Link>
 						<h1>Welcome {firebase.auth().currentUser.displayName}</h1>{" "}
 						{/* firebase.auth().currentUser is an object*/}
 						<img
