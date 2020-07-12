@@ -1,5 +1,5 @@
 import React from "react";
-import "./LocalBusinesses.css";
+import "./css/LocalBusinesses.css";
 import content1 from "./Images/content1.jpg";
 import content2 from "./Images/content2.jpg";
 import content3 from "./Images/content3.jpg";
@@ -7,7 +7,6 @@ import content4 from "./Images/content4.jpg";
 import content5 from "./Images/content5.jpg";
 import content6 from "./Images/content6.jpg";
 import content7 from "./Images/content7.jpg";
-import "./css/LocalBusinesses.css";
 
 const LocalBusinesses = () => {
 	return (

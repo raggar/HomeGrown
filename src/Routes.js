@@ -22,9 +22,6 @@ const Routes = ({ name, updateName, isSignedIn, logsOut, logsIn }) => {
 				<Route path="/localbusinesses" component={LocalBusinesses} />
 				<Route path="/map" component={MapsDeploy} />
 				<Route path="/searchbusinesses" component={SearchBusinesses} />
-				{/* <Route path="/searchbusinesses">
-					<SearchBusinesses searchFunction={searchFunction}/>
-				</Route>  */}
 				<Route path="/searchjobs" component={SearchJobs} />
 			</Switch>
 		</main>
