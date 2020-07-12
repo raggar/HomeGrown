@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchStyles.css";
+import "./css/SearchStyles.css";
 import "./js/SearchFunction.js";
 
 const SearchBusinesses = () => {

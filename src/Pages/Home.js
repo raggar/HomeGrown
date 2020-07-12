@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-import "./Home.css";
+import "./css/Home.css";
 import "./js/modal-manager.js";
 
 import plants from "./img/plants.png";

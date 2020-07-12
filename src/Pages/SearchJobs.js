@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchStyles.css";
+import "./css/SearchStyles.css";
 import "./js/SearchFunction.js";
 
 const SearchJobs = () => {
@@ -9,9 +9,9 @@ const SearchJobs = () => {
 				<h1>Local Job Postings</h1>
 			</div>
 
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for local job postings" title="Type in a name"/>
+			<input type="text" id="search-input" onkeyup="myFunction()" placeholder="Search for local job postings" title="Type in a name"/>
 
-			<ul id="myUL">
+			<ul id="ul-content">
 				<li><a href="https://tvdsb.knighthunter.com/JobView.aspx?JID=b756e9df-24fb-4aaf-b567-7eafc53a666d">Thames Valley Education Foundation - Summer Student (London, ON)</a></li>
 				<li><a href="https://recruit.uwo.ca/psc/hrprdwebER/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&JobOpeningId=20171&SiteId=1&PostingSeq=1&">Rec. Facility Student Attendant</a></li>
 

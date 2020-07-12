@@ -1,5 +1,5 @@
 import React from "react";
-import "./LocalBusinesses.css";
+import "./css/LocalBusinesses.css";
 
 const LocalBusinesses = () => {
 	return (
