@@ -6,7 +6,7 @@ With the whole world on lockdown due to the COVID-19 crisis, more and more peopl
 
 HomeGrown is our solution to this: a webapp that not only serves as a platform for small and local businesses to promote themselves to their communities and to connect with locally available financial aid resources, but also allows people to find job openings in the local shops in their vicinity. When customers looking for local businesses visit the site, it will display the businesses near them, and exciting deals, posts and advertisements being offered by the business in the newsfeed, and the customer will be able to search and filter the results based on the business name and the services they offer. Peopke will also be able to search up jobs to sustain themselves.
 
-HomeGrown was made with React.JS and Firebase, and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HomeGrown was made with React.JS, Node.js, Jquery and Firebase, and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Contributions
 
@@ -38,14 +38,33 @@ We began with splitting the team into backend and frontend developers based on p
 * Adding more businesses and locations to HomeGrown's database, eventually expanding to small businesses in cities all around the world!
 * Creating a dedicated portal to allow customers to directly order from registered businesses with the HomeGrown web-app/application, as well as people to find job openings in the vicinity.
 
-## Available Scripts
+## Dependencies to Install in the Root Directory
 
-In the project directory, you can run:
+These packages can be installed using the "npm install" command in the terminal line. 
 
-### `yarn start`
+- react 
+- firebase
+- react-firebaseui
+- react-geocode
+- react-autocomplete
+- react-google-maps
+- react-router-dom
+- axios
+- jquery
+- qs
+
+## Commands to Run
+
+In the project directory, you can run the following commands:
+
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+### `nodemon server.js`
+
+Runs the development server to connect with Google Maps API. In the terminal "nodemon starting node server.js Server running on port: 5000" should be running. 
