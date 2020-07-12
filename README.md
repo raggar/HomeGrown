@@ -4,7 +4,7 @@
 
 With the whole world on lockdown due to the COVID-19 crisis, more and more people are adapting to a new routine of life at home. However, with a sharp decline of customers, many local businesses are still struggling to adapt to this new world. Many businessowners are faced a difficult choice: stay open for their communities at risk of bankruptcy, or shut down permanently.
 
-HomeGrown is our solution to tackle this problem. Homegrown is a webapp that serves as a platform for small and local businesses to promote themselves to their communities and to connect with locally available financial aid resources. When customers looking for local businesses visit the site, it will display the businesses near them, and the customer will be able to search and filter the results based on the business name and the services they offer.
+HomeGrown is our solution to tackle this problem. HomeGrown is a webapp that serves as a platform for small and local businesses to promote themselves to their communities and to connect with locally available financial aid resources. When customers looking for local businesses visit the site, it will display the businesses near them, and the customer will be able to search and filter the results based on the business name and the services they offer.
 
 HomeGrown was made with React.JS and Firebase, and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
