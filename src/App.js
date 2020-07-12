@@ -41,12 +41,6 @@ class App extends Component {
 					name={this.state.name}
 				/>
 			</div>
-			/* <div className="searchFunction">
-				<Routes
-					searchFunction={this.searchFunction}
-				/>
-			</div>
-			</div> */
 		);
 	}
 }

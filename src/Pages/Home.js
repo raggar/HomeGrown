@@ -63,7 +63,7 @@ const Home = ({ name, updateName, logsOut, logsIn, isSignedIn }) => {
 			</div>
 
 			{/* Toolbar at the top */}
-			<div class="toolbar">
+			<div className="toolbar">
 				{isSignedIn ? (
 					<div className="nav-items">
 						<button onClick={logsOut} className="toolbar-button">

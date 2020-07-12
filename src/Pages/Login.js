@@ -38,14 +38,6 @@ class Login extends Component {
 		return (
 			<div className="login">
 				{this.props.isSignedIn ? null : (
-					/* <div>
-						<button onClick={this.props.logsOut}>Sign out!</button>
-						<h1>Welcome {firebase.auth().currentUser.displayName}</h1>{" "}
-						<img
-							alt="profile picture"
-							src={firebase.auth().currentUser.photoURL}
-						/>
-					</div> */
 					<div>
 						<StyledFirebaseAuth
 							uiConfig={this.uiConfig}
