@@ -143,6 +143,11 @@ hr {
 	margin: none;
 }
 
+#small-btn {
+	width: 25%;
+	height: auto;
+}
+
 #icon {
 	max-width: 100%;
 	max-height: 100%;
@@ -155,7 +160,7 @@ hr {
 
 .button-container {
 	margin: auto;
-	width: 50%;
+	width: 75%;
 }
 
 .toolbar {

@@ -43,19 +43,34 @@ const Home = ({ name, updateName, logsOut, logsIn, isSignedIn }) => {
 						</Link>
 					</div>
 					<div className="text-container">
-						{/* hopefully we can make this link dynamically adapt to the country the user is in (dynamically changing a link variable based on location? Links stored in a database) */}
-						{/* Option 2: have it link to a page that displays all the compiled relief websites, with filters based on location */}
+						{/* hopefully we can make this link dynamically adapt to the country the user is in (dynamically changing a link variable based on location? Links stored in a database) /}
+                        {/ Option 2: have it link to a page that displays all the compiled relief websites, with filters based on location */}
 						<a
 							href="https://www.canada.ca/en/department-finance/economic-response-plan.html#businesses"
 							className="button"
+							id="small-btn"
 						>
 							{" "}
-							COVID-19 Relief for <br />
-							Local Businesses
+							COVID-19 Relief for Local Businesses
 						</a>
-						<a className="button">
-							Looking for a job? <br /> (Sign Up)
-						</a>
+						<Link to="/searchjobs">
+							<a className="button" id="small-btn">
+								Looking for a job? <br /> (Sign Up)
+							</a>
+						</Link>
+						<Link to="/localbusinesses">
+							<a className="button" id="small-btn">
+								Visit Local <br />
+								Newsfeed
+							</a>
+						</Link>
+					</div>
+					<div className="text-container">
+						<Link to="/map">
+							<button className="button" id="local-businesses-btn">
+								Google Maps
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>

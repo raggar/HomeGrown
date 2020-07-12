@@ -28,9 +28,7 @@ class Login extends Component {
 		//runs when app is first ran
 		firebase.auth().onAuthStateChanged((user) => {
 			this.props.logsIn(user); //executes when user logins
-			if (firebase.auth().currentUser.displayName) {
-				this.props.updateName(firebase.auth().currentUser.displayName);
-			}
+			this.props.updateName(firebase.auth().currentUser.displayName);
 		});
 	};
 
