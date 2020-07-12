@@ -16,7 +16,7 @@ Team members:
 Krish Mehta, Carol Xu, Rahul Aggarwal, Jeannie Quach
 
 ## How We Built It
-We began with splitting the team into backend and frontend developers based on prior experience. The frontend team began with designing ideas for the overall layout and eventual functionality of the website, and the backend team gave feedback on these design ideas and determined the APIs needed to implement the desired functionality.
+We began with splitting the team into backend and frontend developers based on prior experience. The frontend team began with designing ideas for the overall layout and eventual functionality of the website, and the backend team gave feedback on these design ideas and determined the APIs needed to implement the desired functionality. The frontend team began with coding in the landing page and business listings page in static HTML, and eventually converted this to a React.JS webapp, while backend worked on using the Firebase API to perform user registration and authentication.
 
 ## Challenges
 
