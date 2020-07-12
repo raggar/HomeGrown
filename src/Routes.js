@@ -1,10 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import SignOut from "./Pages/SignOut";
-import LocationMapping from "./LocationMapping";
 import LocalBusinesses from "./Pages/LocalBusinesses";
+import MapsDeploy from "./Pages/MapsDeploy";
 
 const Routes = ({ isSignedIn, logsOut, logsIn }) => {
 	return (
@@ -13,8 +11,8 @@ const Routes = ({ isSignedIn, logsOut, logsIn }) => {
 				<Route exact path="/">
 					<Home logsOut={logsOut} logsIn={logsIn} isSignedIn={isSignedIn} />
 				</Route>
-				<Route path="/signout" component={SignOut} />
 				<Route path="/localbusinesses" component={LocalBusinesses} />
+				<Route path="/map" component={MapsDeploy} />
 			</Switch>
 		</main>
 	);
