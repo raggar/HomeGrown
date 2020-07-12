@@ -4,10 +4,10 @@ import {searchFunction} from "./js/SearchFunction.js";
 
 const SearchBusinesses = () => {
 	return (
-		<div>
+		<div className="searchBusinesses">
 			<h2 id="header">Your local businesses</h2>
 
-			<input type="text" id="search-input" onkeyup={searchFunction()} placeholder="Search for local businesses by name, address, or tags and services" title="Type in a name"/>
+			<input type="text" id="search-input" onkeyup={searchFunction} placeholder="Search for local businesses by name, address, or tags and services" title="Type in a name"/>
 
 			<ul id="ul-content">
 				<li><a href="https://trailsendmarket.com/"><h3 class="title">Trails End Market</h3>4370 Dundas St, Thorndale, ON<p class="hidden">Market Fresh food weekends furniture highway animals</p></a></li>

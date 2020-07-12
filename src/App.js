@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import firebase from "firebase";
+import searchFunction from "./Pages/js/SearchFunction";
 import Routes from "./Routes";
 
 class App extends Component {

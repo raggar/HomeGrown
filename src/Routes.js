@@ -18,6 +18,9 @@ const Routes = ({ isSignedIn, logsOut, logsIn }) => {
 				<Route path="/signout" component={SignOut} />
 				<Route path="/localbusinesses" component={LocalBusinesses} />
 				<Route path="/searchbusinesses" component={SearchBusinesses} />
+				{/* <Route path="/searchbusinesses">
+					<SearchBusinesses searchFunction={searchFunction}/>
+				</Route>  */}
 				<Route path="/searchjobs" component={SearchJobs} />
 			</Switch>
 		</main>
