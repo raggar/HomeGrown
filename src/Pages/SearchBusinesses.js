@@ -5,7 +5,7 @@ import "./js/SearchFunction";
 const SearchBusinesses = () => {
 	return (
 		<div className="searchBusinesses">
-			<h2 id="header">Your local businesses</h2>
+			<h2 id="header">Local Businesses in Your City (London, ON, CAN)</h2>
 
 			<input type="text" id="search-input" placeholder="Search for local businesses by name, address, or tags and services" title="Type in a name"/>
 
