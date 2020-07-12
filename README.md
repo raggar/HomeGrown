@@ -1,5 +1,7 @@
 # HomeGrown
 
+## Inspiration
+
 With the whole world on lockdown due to the COVID-19 crisis, more and more people are adapting to their new routine of life at home. However, with the sharp decline of customers, many local businesses are struggling to adapt. Businessowners are faced a difficult choice: stay open for their communities at risk of bankruptcy, or shut down permanently. 
 
 HomeGrown is our solution to this: a webapp that serves as a platform for small and local businesses to connect with their community and to connect these businesses with locally available financial aid resources. 
