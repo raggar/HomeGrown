@@ -8,12 +8,18 @@ HomeGrown is our solution to this: a webapp that serves as a platform for small 
 
 HomeGrown was made with React.JS and Firebase, and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Contributions
+## Contributions
 
 This project was made during the 2020 Hack3 Virtual Hackathon.
 
 Team members:
 Krish Mehta, Carol Xu, Rahul Aggarwal, Jeannie Quach
+
+## Challenges
+
+
+## Accomplishments
+
 
 ## Available Scripts
 
