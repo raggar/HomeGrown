@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-import { Link } from "react-router-dom";
+
 //initializes firebase
 firebase.initializeApp({
 	apiKey: "AIzaSyDRiQUIqJjSIDV9Yjf9SxMBAgsFiX6M4pw", //taken from Firebase developer console
@@ -24,11 +24,6 @@ class Login extends Component {
 		},
 	};
 
-	logout = () => {
-		this.props.logsOut();
-		firebase.auth().signOut(); //close Firebase;
-	};
-
 	componentDidMount = () => {
 		//runs when app is first ran
 		firebase.auth().onAuthStateChanged((user) => {
@@ -39,22 +34,16 @@ class Login extends Component {
 	render() {
 		return (
 			<div className="login">
-				{this.props.isSignedIn ? (
-					<div>
-						<div>Signed In!</div>
-						<Link to="/signout">
-							<button onClick={this.logout}>Sign out!</button>
-						</Link>
+				{this.props.isSignedIn ? null : (
+					/* <div>
+						<button onClick={this.props.logsOut}>Sign out!</button>
 						<h1>Welcome {firebase.auth().currentUser.displayName}</h1>{" "}
-						{/* firebase.auth().currentUser is an object*/}
 						<img
 							alt="profile picture"
 							src={firebase.auth().currentUser.photoURL}
 						/>
-					</div>
-				) : (
+					</div> */
 					<div>
-						<h1>Home Grown Login Page</h1>
 						<StyledFirebaseAuth
 							uiConfig={this.uiConfig}
 							firebaseAuth={firebase.auth()}

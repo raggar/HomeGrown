@@ -4,17 +4,17 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import SignOut from "./Pages/SignOut";
 import LocationMapping from "./LocationMapping";
+import LocalBusinesses from "./Pages/LocalBusinesses";
 
 const Routes = ({ isSignedIn, logsOut, logsIn }) => {
 	return (
 		<main>
 			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route path="/login">
-					<Login logsOut={logsOut} logsIn={logsIn} isSignedIn={isSignedIn} />
+				<Route exact path="/">
+					<Home logsOut={logsOut} logsIn={logsIn} isSignedIn={isSignedIn} />
 				</Route>
 				<Route path="/signout" component={SignOut} />
-				{/* <Route path="/map" component={LocationMapping} /> */}
+				<Route path="/localbusinesses" component={LocalBusinesses} />
 			</Switch>
 		</main>
 	);

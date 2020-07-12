@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import firebase from "firebase";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import Routes from "./Routes";
-import { Redirect } from "react-router-dom";
 
 class App extends Component {
 	state = {
@@ -11,6 +9,7 @@ class App extends Component {
 	};
 
 	logsOut = () => {
+		firebase.auth().signOut(); //close Firebase;
 		this.setState({ isSignedIn: false }, () =>
 			console.log("User Logged In:", this.state.isSignedIn)
 		);

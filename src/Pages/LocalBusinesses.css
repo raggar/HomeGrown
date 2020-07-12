@@ -1,0 +1,101 @@
+body {
+	font-family: Montserrat;
+	background-color: #fff3d8;
+}
+
+#container {
+	background-color: white;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	background-color: #d0e7be;
+	text-align: center;
+}
+
+#image1 {
+	width: 400px;
+	float: left;
+	padding-bottom: 50px;
+}
+
+#text1 {
+	width: 400px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+#image2 {
+	width: 470px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+#text2 {
+	width: 300px;
+	float: left;
+}
+
+#image3 {
+	width: 400px;
+	float: left;
+	padding-bottom: 50px;
+}
+
+#text3 {
+	width: 400px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+#image4 {
+	width: 470px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+#text4 {
+	width: 300px;
+	float: left;
+	padding-bottom: 50px;
+}
+
+#image5 {
+	width: 400px;
+	float: left;
+	padding-bottom: 50px;
+}
+
+#text5 {
+	width: 300px;
+	height: 250px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+#image6 {
+	width: 470px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+#text6 {
+	width: 300px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#image7 {
+	width: 300px;
+	float: left;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+#text7 {
+	width: 400px;
+	float: right;
+	padding-bottom: 50px;
+}
