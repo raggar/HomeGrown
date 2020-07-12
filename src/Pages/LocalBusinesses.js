@@ -7,6 +7,7 @@ import content4 from "./Images/content4.jpg";
 import content5 from "./Images/content5.jpg";
 import content6 from "./Images/content6.jpg";
 import content7 from "./Images/content7.jpg";
+import "./css/LocalBusinesses.css";
 
 const LocalBusinesses = () => {
 	return (
