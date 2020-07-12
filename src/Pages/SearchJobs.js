@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/SearchStyles.css";
-import "./js/SearchFunction.js";
+import "./js/modal-manager";
 
 
 const SearchJobs = () => {
