@@ -5,6 +5,8 @@ import Login from "./Pages/Login";
 import SignOut from "./Pages/SignOut";
 import LocationMapping from "./LocationMapping";
 import LocalBusinesses from "./Pages/LocalBusinesses";
+import SearchBusinesses from "./Pages/SearchBusinesses";
+import SearchJobs from "./Pages/SearchJobs";
 
 const Routes = ({ isSignedIn, logsOut, logsIn }) => {
 	return (
@@ -15,6 +17,8 @@ const Routes = ({ isSignedIn, logsOut, logsIn }) => {
 				</Route>
 				<Route path="/signout" component={SignOut} />
 				<Route path="/localbusinesses" component={LocalBusinesses} />
+				<Route path="/searchbusinesses" component={SearchBusinesses} />
+				<Route path="/searchjobs" component={SearchJobs} />
 			</Switch>
 		</main>
 	);
