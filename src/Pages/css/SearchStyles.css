@@ -39,6 +39,7 @@ body {
   font-size: 18px;
   color: black;
   display: block;
+  text-align: left;
 }
 
 #ul-content li a:hover:not(.header) {

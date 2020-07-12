@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+// import { Link } from "react-router";
 
 import "./css/Home.css";
 import "./js/modal-manager.js";
@@ -9,7 +9,7 @@ import plants2 from "./css/img/plants2.png";
 import placeholderPFP from "./css/img/logo.png";
 
 import Login from "./Login";
-import SearchBusinesses from "./SearchBusinesses";
+// import SearchBusinesses from "./SearchBusinesses";
 
 const Home = ({ logsOut, logsIn, isSignedIn }) => {
 	return (
