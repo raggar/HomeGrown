@@ -8,7 +8,7 @@ import {
 } from "react-google-maps";
 import Geocode from "react-geocode";
 
-Geocode.setApiKey("AIzaSyDGe5vjL8wBmilLzoJ0jNIwe9SAuH2xS_0");
+Geocode.setApiKey("AIzaSyChSBZ64X3qTfd_9XsN7o9axHGkmEj-u5k");
 Geocode.enableDebug();
 
 class Maps extends React.Component {
@@ -32,6 +32,7 @@ class Maps extends React.Component {
 	/**
 	 * Get the current address from the default map position and set those values in the state
 	 */
+
 	componentDidMount() {
 		Geocode.fromLatLng(
 			this.state.mapPosition.lat,
@@ -215,10 +216,10 @@ class Maps extends React.Component {
 						</div>
 					</div>
 					<AsyncMap
-						googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGe5vjL8wBmilLzoJ0jNIwe9SAuH2xS_0&libraries=places"
-						loadingElement={<div style={{ height: `100%` }} />}
+						googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyChSBZ64X3qTfd_9XsN7o9axHGkmEj-u5k"
+						loadingElement={<div style={{ height: `250%` }} />}
 						containerElement={<div style={{ height: this.props.height }} />}
-						mapElement={<div style={{ height: `100%` }} />}
+						mapElement={<div style={{ height: `250%` }} />}
 					/>
 				</div>
 			);
