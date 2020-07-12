@@ -1,15 +1,11 @@
 import React from "react";
-// import { Link } from "react-router";
-
 import "./css/Home.css";
 import "./js/modal-manager.js";
-
 import plants from "./css/img/plants.png";
 import plants2 from "./css/img/plants2.png";
 import placeholderPFP from "./css/img/logo.png";
-
 import Login from "./Login";
-// import SearchBusinesses from "./SearchBusinesses";
+import { Link } from "react-router-dom";
 
 const Home = ({ name, updateName, logsOut, logsIn, isSignedIn }) => {
 	return (
@@ -40,9 +36,11 @@ const Home = ({ name, updateName, logsOut, logsIn, isSignedIn }) => {
 
 				<div className="button-container">
 					<div className="text-container">
-						<button className="button" id="local-businesses-btn">
-							Local Businesses Near You
-						</button>
+						<Link to="/searchbusinesses">
+							<button className="button" id="local-businesses-btn">
+								Local Businesses Near You
+							</button>
+						</Link>
 					</div>
 					<div className="text-container">
 						{/* hopefully we can make this link dynamically adapt to the country the user is in (dynamically changing a link variable based on location? Links stored in a database) */}
@@ -69,9 +67,8 @@ const Home = ({ name, updateName, logsOut, logsIn, isSignedIn }) => {
 						<button onClick={logsOut} className="toolbar-button">
 							SIGN OUT
 						</button>
-						<button className="toolbar-button">PROFILE</button>
 						<button className="toolbar-button">SETTINGS</button>
-						<button className="toolbar-button">{name}</button>
+						<button className="toolbar-button">{name.toUpperCase()}</button>
 						<button className="toolbar-button" id="pfp">
 							<img id="icon" src={placeholderPFP} alt="" />
 						</button>
