@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 
-import "./homegrown.css";
-import "./animation/modal-manager.js";
+import "./Home.css";
+import "./js/modal-manager.js";
 
 import plants from "./img/plants.png";
 import plants2 from "./img/plants2.png";
@@ -11,7 +11,7 @@ import Login from "./Login";
 
 const Home = ({ logsOut, logsIn, isSignedIn }) => {
 	return (
-		<div className="homegrown">
+		<div className="Home">
 			{/* <!-- First Page --> */}
 			<div className="landing-page">
 				{/* <!-- Plants lol --> */}
