@@ -40,8 +40,10 @@ return (
 					<button className="button" id="local-businesses-btn">Local Businesses Near You</button>
 				</div>
 				<div className="text-container">
-					<button className="button" id="left">Relief for Local <br/> Businesses</button>
-					<button className="button" id="right">Looking for a job? <br/> (Sign Up)</button>
+					{/* hopefully we can make this link dynamically adapt to the country the user is in (dynamically changing a link variable based on location? Links stored in a database) */}
+					{/* Option 2: have it link to a page that displays all the compiled relief websites, with filters based on location */}
+					<a href="https://www.canada.ca/en/department-finance/economic-response-plan.html#businesses" className="button"> COVID-19 Relief for <br/>Local Businesses</a>
+					<a className="button">Looking for a job? <br/> (Sign Up)</a>
 				</div>
 			</div>
 		</div>
