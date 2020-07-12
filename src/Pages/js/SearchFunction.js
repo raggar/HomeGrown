@@ -1,15 +1,17 @@
-function myFunction() {
-    var input, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput").value.toUpperCase();
+export function searchFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+
+    input = document.getElementById("search-input");
+    ul = document.getElementById("ul-content");
+    li = ul.getElementsByTagName("li");
 	
 	if (input) {
-		document.getElementById("myUL").style.display="block";
+        filter = input.value.toUpperCase();
+		document.getElementById("ul-content").style.display="block";
 	} else {
-		document.getElementById("myUL").style.display="none";
+		document.getElementById("ul-content").style.display="none";
 	}
 	
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;

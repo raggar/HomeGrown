@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/SearchStyles.css";
-import "./js/SearchFunction.js";
+// import searchFunction from "./js/SearchFunction.js";
+
 
 const SearchJobs = () => {
 	return (
@@ -9,7 +10,9 @@ const SearchJobs = () => {
 				<h1>Local Job Postings</h1>
 			</div>
 
-			<input type="text" id="search-input" onkeyup="myFunction()" placeholder="Search for local job postings" title="Type in a name"/>
+			{/* <button onclick={searchFunction}></button> */}
+
+			<input type="text" id="search-input" /*onkeyup="searchFunction()"*/ placeholder="Search for local job postings" title="Type in a name"/>
 
 			<ul id="ul-content">
 				<li><a href="https://tvdsb.knighthunter.com/JobView.aspx?JID=b756e9df-24fb-4aaf-b567-7eafc53a666d">Thames Valley Education Foundation - Summer Student (London, ON)</a></li>

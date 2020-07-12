@@ -1,13 +1,13 @@
 import React from "react";
 import "./css/SearchStyles.css";
-import "./js/SearchFunction.js";
+import {searchFunction} from "./js/SearchFunction.js";
 
 const SearchBusinesses = () => {
 	return (
 		<div>
 			<h2 id="header">Your local businesses</h2>
 
-			<input type="text" id="search-input" onkeyup="myFunction()" placeholder="Search for local businesses by name, address, or tags and services" title="Type in a name"/>
+			<input type="text" id="search-input" onkeyup={searchFunction()} placeholder="Search for local businesses by name, address, or tags and services" title="Type in a name"/>
 
 			<ul id="ul-content">
 				<li><a href="https://trailsendmarket.com/"><h3 class="title">Trails End Market</h3>4370 Dundas St, Thorndale, ON<p class="hidden">Market Fresh food weekends furniture highway animals</p></a></li>
@@ -29,9 +29,10 @@ const SearchBusinesses = () => {
 			</p></a></li>
 				
 				<li><a href="https://nutsforcheese.com/"><h3 class="title">Nuts for Cheese</h3>London, ON<p class="hidden">vegan dairy-free dairy free food cheese manufacture manufacturer</p></a></li>
-				
+			
 
 			</ul>
+		{/* <script type="text/javascript" src="./js/SearchFunction"></script> */}
 
 		</div>
 	);
