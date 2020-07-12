@@ -8,6 +8,10 @@ With the whole world on lockdown due to the COVID-19 crisis, more and more peopl
 
 HomeGrown is our solution to this: a web app that not only serves as a platform for small and local businesses to promote themselves to their communities but also to connect people locally with available financial aid resources and to find job openings in their vicinity.
 When visiting our site, businesses nearby are displayed with exciting deals, posts, and advertisements on the website’s newsfeed. Customers will be able to search and filter the results based on the businesses name and the offered services. Furthermore, people will be able to search up available jobs to sustain themselves.
+
+## Project Demo
+
+Visit the following link to view the project demo: https://drive.google.com/drive/folders/1QD7w_WBRqmBjpQaCfEpPsmc_FffdVtHM?usp=sharing
  
 ## Contributions
 
