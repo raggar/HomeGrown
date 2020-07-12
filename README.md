@@ -15,6 +15,9 @@ This project was made during the 2020 Hack3 Virtual Hackathon.
 Team members:
 Krish Mehta, Carol Xu, Rahul Aggarwal, Jeannie Quach
 
+## How We Built It
+
+
 ## Challenges
 
 
