@@ -1,5 +1,12 @@
 import React from "react";
 import "./LocalBusinesses.css";
+import content1 from "./Images/content1.jpg";
+import content2 from "./Images/content2.jpg";
+import content3 from "./Images/content3.jpg";
+import content4 from "./Images/content4.jpg";
+import content5 from "./Images/content5.jpg";
+import content6 from "./Images/content6.jpg";
+import content7 from "./Images/content7.jpg";
 
 const LocalBusinesses = () => {
 	return (
@@ -8,12 +15,12 @@ const LocalBusinesses = () => {
 			<body>
 				<div id="container">
 					<div id="header">
-						<h1>What's new within our local community</h1>
+						<h1>What's New Within our Local Community?</h1>
 					</div>
 
-					<div id="content1">
+					<div id={"content1"}>
 						<div id="image1">
-							<img src="G:\TrailEnd.jpg" width="370" height="300" />
+							<img src={content1} width="370" height="300" />
 						</div>
 
 						<div id="text1">
@@ -33,7 +40,7 @@ const LocalBusinesses = () => {
 
 					<div id="content2">
 						<div id="image2">
-							<img src="G:\ice1.jpg" width="470" height="300" />
+							<img src={content2} width="470" height="300" />
 						</div>
 
 						<div id="text2">
@@ -57,7 +64,7 @@ const LocalBusinesses = () => {
 
 					<div id="content3">
 						<div id="image3">
-							<img src="G:\Trailer.jpg" width="370" height="400" />
+							<img src={content3} width="370" height="400" />
 						</div>
 
 						<div id="text3">
@@ -84,7 +91,7 @@ const LocalBusinesses = () => {
 
 					<div id="content4">
 						<div id="image4">
-							<img src="G:\markys-crepe-cafe.jpg" width="470" height="300" />
+							<img src={content4} width="470" height="300" />
 						</div>
 
 						<div id="text4">
@@ -105,11 +112,7 @@ const LocalBusinesses = () => {
 
 					<div id="content5">
 						<div id="image5">
-							<img
-								src="G:\Covent-Garden-Market2.jpg"
-								width="470"
-								height="300"
-							/>
+							<img src={content5} width="470" height="300" />
 						</div>
 
 						<div id="text5">
@@ -132,7 +135,7 @@ const LocalBusinesses = () => {
 
 					<div id="content6">
 						<div id="image6">
-							<img src="G:\car.jpg" width="470" height="300" />
+							<img src={content6} width="470" height="300" />
 						</div>
 
 						<div id="text6">
@@ -157,7 +160,7 @@ const LocalBusinesses = () => {
 
 					<div id="content7">
 						<div id="image7">
-							<img src="G:\mill.jpg" width="370" height="250" />
+							<img src={content7} width="370" height="250" />
 						</div>
 
 						<div id="text7">

@@ -9,7 +9,7 @@ import plants2 from "./img/plants2.png";
 import placeholderPFP from "./img/logo.png";
 import Login from "./Login";
 
-const Home = ({ logsOut, logsIn, isSignedIn }) => {
+const Home = ({ name, updateName, logsOut, logsIn, isSignedIn }) => {
 	return (
 		<div className="homegrown">
 			{/* <!-- First Page --> */}
@@ -69,15 +69,21 @@ const Home = ({ logsOut, logsIn, isSignedIn }) => {
 						</button>
 						<button className="toolbar-button">PROFILE</button>
 						<button className="toolbar-button">SETTINGS</button>
+						<button className="toolbar-button">{name}</button>
+						<button className="toolbar-button" id="pfp">
+							<img id="icon" src={placeholderPFP} alt="" />
+						</button>
 					</div>
 				) : (
-					<button className="toolbar-button" id="login">
-						SIGN IN
-					</button>
+					<div className="nav-items">
+						<button className="toolbar-button" id="login">
+							SIGN IN
+						</button>
+						<button className="toolbar-button" id="pfp">
+							<img id="icon" src={placeholderPFP} alt="" />
+						</button>
+					</div>
 				)}
-				<button className="toolbar-button" id="pfp">
-					<img id="icon" src={placeholderPFP} alt="" />
-				</button>
 			</div>
 
 			{/* Modal popups */}
@@ -90,7 +96,12 @@ const Home = ({ logsOut, logsIn, isSignedIn }) => {
 					)}
 
 					<div className="close">+</div>
-					<Login logsOut={logsOut} logsIn={logsIn} isSignedIn={isSignedIn} />
+					<Login
+						logsOut={logsOut}
+						logsIn={logsIn}
+						isSignedIn={isSignedIn}
+						updateName={updateName}
+					/>
 				</div>
 			</div>
 		</div>

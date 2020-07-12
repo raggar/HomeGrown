@@ -6,6 +6,13 @@ import Routes from "./Routes";
 class App extends Component {
 	state = {
 		isSignedIn: false,
+		name: "",
+	};
+
+	updateName = (name) => {
+		this.setState({ name: name }, () =>
+			console.log("User's Name", this.state.name)
+		);
 	};
 
 	logsOut = () => {
@@ -28,6 +35,8 @@ class App extends Component {
 					logsOut={this.logsOut}
 					logsIn={this.logsIn}
 					isSignedIn={this.state.isSignedIn}
+					updateName={this.updateName}
+					name={this.state.name}
 				/>
 			</div>
 		);
