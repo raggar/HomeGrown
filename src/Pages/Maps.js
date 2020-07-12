@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
 	withGoogleMap,
 	GoogleMap,
@@ -6,9 +6,9 @@ import {
 	InfoWindow,
 	Marker,
 } from "react-google-maps";
+import Autocomplete from "react-google-autocomplete";
 import Geocode from "react-geocode";
-
-Geocode.setApiKey("AIzaSyChSBZ64X3qTfd_9XsN7o9axHGkmEj-u5k");
+Geocode.setApiKey("AIzaSyDxnOIOXxJga_ruEFzmpiYBBP2u4vwdgsY");
 Geocode.enableDebug();
 
 class Maps extends React.Component {
@@ -32,7 +32,6 @@ class Maps extends React.Component {
 	/**
 	 * Get the current address from the default map position and set those values in the state
 	 */
-
 	componentDidMount() {
 		Geocode.fromLatLng(
 			this.state.mapPosition.lat,
@@ -152,6 +151,65 @@ class Maps extends React.Component {
 	 * @param event
 	 */
 	onInfoWindowClose = (event) => {};
+	/**
+	 * When the user types an address in the search box
+	 * @param place
+	 */
+	onPlaceSelected = (place) => {
+		const address = place.formatted_address,
+			addressArray = place.address_components,
+			city = this.getCity(addressArray),
+			area = this.getArea(addressArray),
+			state = this.getState(addressArray),
+			latValue = place.geometry.location.lat(),
+			lngValue = place.geometry.location.lng();
+		// Set these values in the state.
+		this.setState({
+			address: address ? address : "",
+			area: area ? area : "",
+			city: city ? city : "",
+			state: state ? state : "",
+			markerPosition: {
+				lat: latValue,
+				lng: lngValue,
+			},
+			mapPosition: {
+				lat: latValue,
+				lng: lngValue,
+			},
+		});
+	};
+	/**
+	 * When the marker is dragged you get the lat and long using the functions available from event object.
+	 * Use geocode to get the address, city, area and state from the lat and lng positions.
+	 * And then set those values in the state.
+	 *
+	 * @param event
+	 */
+	onMarkerDragEnd = (event) => {
+		console.log("event", event);
+		let newLat = event.latLng.lat(),
+			newLng = event.latLng.lng(),
+			addressArray = [];
+		Geocode.fromLatLng(newLat, newLng).then(
+			(response) => {
+				const address = response.results[0].formatted_address,
+					addressArray = response.results[0].address_components,
+					city = this.getCity(addressArray),
+					area = this.getArea(addressArray),
+					state = this.getState(addressArray);
+				this.setState({
+					address: address ? address : "",
+					area: area ? area : "",
+					city: city ? city : "",
+					state: state ? state : "",
+				});
+			},
+			(error) => {
+				console.error(error);
+			}
+		);
+	};
 	render() {
 		const AsyncMap = withScriptjs(
 			withGoogleMap((props) => (
@@ -162,7 +220,47 @@ class Maps extends React.Component {
 						lat: this.state.mapPosition.lat,
 						lng: this.state.mapPosition.lng,
 					}}
-				></GoogleMap>
+				>
+					{/* For Auto complete Search Box */}
+					<Autocomplete
+						style={{
+							width: "100%",
+							height: "40px",
+							paddingLeft: "16px",
+							marginTop: "2px",
+							marginBottom: "100px",
+						}}
+						onPlaceSelected={this.onPlaceSelected}
+						types={["(regions)"]}
+					/>
+					{/*Marker*/}
+					<Marker
+						google={this.props.google}
+						name={"Dolores park"}
+						draggable={true}
+						onDragEnd={this.onMarkerDragEnd}
+						position={{
+							lat: this.state.markerPosition.lat,
+							lng: this.state.markerPosition.lng,
+						}}
+					/>
+					<Marker />
+
+					{/* InfoWindow on top of marker */}
+					<InfoWindow
+						onClose={this.onInfoWindowClose}
+						position={{
+							lat: this.state.markerPosition.lat + 0.0018,
+							lng: this.state.markerPosition.lng,
+						}}
+					>
+						<div>
+							<span style={{ padding: 0, margin: 0 }}>
+								{this.state.address}
+							</span>
+						</div>
+					</InfoWindow>
+				</GoogleMap>
 			))
 		);
 		let map;
@@ -216,7 +314,7 @@ class Maps extends React.Component {
 						</div>
 					</div>
 					<AsyncMap
-						googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyChSBZ64X3qTfd_9XsN7o9axHGkmEj-u5k"
+						googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxnOIOXxJga_ruEFzmpiYBBP2u4vwdgsY&libraries=places"
 						loadingElement={<div style={{ height: `250%` }} />}
 						containerElement={<div style={{ height: this.props.height }} />}
 						mapElement={<div style={{ height: `250%` }} />}
