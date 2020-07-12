@@ -25,7 +25,9 @@ Krish Mehta, Carol Xu, Rahul Aggarwal, Jeannie Quach
 
 
 ## What's Next?
-
+* Allowing small businesses to register an account on HomeGrown to post their own advertisements and job listings
+* Turning the webapp into a phone app: deployment to iOS and Android
+* Adding more businesses and locations to HomeGrown's database, eventually expanding to small businesses in cities all around the world!
 
 ## Available Scripts
 
